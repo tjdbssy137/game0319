@@ -48,10 +48,8 @@ public class EmemyMove : MonoBehaviour
     {
         if(other.gameObject.CompareTag("bullet"))
         {
-            Destroy(this.gameObject);
-            --EnemySpawn.Instance.EnemyCount;
             //·£´ý È®·ü·Î ¾ÆÀÌÅÛ »ý¼º
-            int random = Random.Range(0, 5);
+            int random = Random.Range(0, 6);
             switch(random)
             { 
                 case 3:
@@ -60,9 +58,14 @@ public class EmemyMove : MonoBehaviour
                 case 4:
                     Instantiate(dropItem[1], this.transform.position, this.transform.rotation);
                     break;
+                case 5:
+                    Instantiate(dropItem[2], this.transform.position, this.transform.rotation);
+                    break;
                 default:
                     break;
             }
+            Destroy(this.gameObject);
+            --EnemySpawn.Instance.EnemyCount;
         }
     }
 }

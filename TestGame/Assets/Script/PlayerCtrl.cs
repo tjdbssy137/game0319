@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerCtrl : MonoBehaviour
@@ -20,6 +21,12 @@ public class PlayerCtrl : MonoBehaviour
 
     //HP
     private float HP = 100;
+    public Image playerHP;
+
+    //GUI
+    public GameObject gameover;
+    public Text textUI;
+    int time = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +34,7 @@ public class PlayerCtrl : MonoBehaviour
         this.GetComponentInChildren<SpriteRenderer>().sprite = playerFace[attackCount];
         rb = GetComponent<Rigidbody>();
         Fire();
+        gameover.SetActive(false);
     }
 
     // Update is called once per frame
@@ -39,8 +47,7 @@ public class PlayerCtrl : MonoBehaviour
             Fire();
             timeReset = 0;
         }
-        
-   }
+    }
 
     void Moving()
     {
@@ -65,17 +72,22 @@ public class PlayerCtrl : MonoBehaviour
         }
     }
 
+    void showString()
+    {
+        while (1 < time)
+        {
+            StartCoroutine(Timer());
+        }
+        SceneManager.LoadScene(0);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
+       
         if (other.gameObject.CompareTag("enemyBullet"))
         {
-            HP -= 34f;
-            this.GetComponentInChildren<SpriteRenderer>().sprite = playerFace[++attackCount];
-            if(HP < 0)
-            {
-                Debug.Log("Game Over");
-                //UI
-            }
+            StartCoroutine(DamagePlayer());
+            this.GetComponentInChildren<SpriteRenderer>().sprite = playerFace[++attackCount]; 
         }
         else if (other.gameObject.CompareTag("Item1"))
         {
@@ -87,5 +99,35 @@ public class PlayerCtrl : MonoBehaviour
             Destroy(other.gameObject);
             bulletTime -= 0.2f;
         }
+        else if (other.gameObject.CompareTag("Item3"))
+        {
+            Destroy(other.gameObject);
+            HP += 34f;
+        }
+    }
+
+    IEnumerator DamagePlayer()
+    {
+        float temp = HP;
+        while (temp - 34f <= HP)
+        {
+            HP--;
+
+            if (HP <= 0)
+            {
+                gameover.SetActive(true);
+                showString();
+                Time.timeScale = 0;
+            }
+
+            playerHP.fillAmount = HP / 100;
+            yield return new WaitForSeconds(0.01f);
+        }
+    }
+
+    IEnumerator Timer()
+    { 
+        yield return new WaitForSeconds(1f);
+        time--;
     }
 }

@@ -60,7 +60,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!65 &9181817455944343893
 BoxCollider:
@@ -98,6 +98,7 @@ MonoBehaviour:
   dropItem:
   - {fileID: 1592784018133742009, guid: eb973973c214f0146aeea0d6216c4f19, type: 3}
   - {fileID: 1592784018133742009, guid: d993d7066ec3c5e41bbfbb222e04f88d, type: 3}
+  - {fileID: 1592784018133742009, guid: b5c3c6aeb01994549a65e33574cdac1a, type: 3}
   enemyBullet: {fileID: 1592784018133742009, guid: ee0edfef0cdebe34c9693aa233ab8b79, type: 3}
 --- !u!1 &7562260538673132518
 GameObject:
