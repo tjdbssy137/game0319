@@ -1,0 +1,396 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.5f1 (9674261d40ee) revision 9860134'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ko' Physical Memory: 8102 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Hub\Editor\2020.3.33f1\2022.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/GitHub/game0319/game0319/TestGame
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+57077
+Successfully changed project path to: D:/GitHub/game0319/game0319/TestGame
+D:/GitHub/game0319/game0319/TestGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [31384] Host "[IP] 192.168.219.104 [Port] 0 [Flags] 2 [Guid] 457912217 [EditorId] 457912217 [Version] 1048832 [Id] WindowsEditor(7,박서윤) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [31384] Host "[IP] 192.168.219.104 [Port] 0 [Flags] 2 [Guid] 457912217 [EditorId] 457912217 [Version] 1048832 [Id] WindowsEditor(7,박서윤) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 185.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.5f1 (9674261d40ee)
+[Subsystems] Discovering subsystems at path D:/Unity/Hub/Editor/2020.3.33f1/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitHub/game0319/game0319/TestGame/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
+    Vendor:   NVIDIA
+    VRAM:     5966 MB
+    Driver:   31.0.15.5123
+Initialize mono
+Mono path[0] = 'D:/Unity/Hub/Editor/2020.3.33f1/2022.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Hub/Editor/2020.3.33f1/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Hub/Editor/2020.3.33f1/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Hub/Editor/2020.3.33f1/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity/Hub/Editor/2020.3.33f1/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011225 seconds.
+- Loaded All Assemblies, in  0.687 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 1743 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.676 seconds
+Domain Reload Profiling: 3363ms
+	BeginReloadAssembly (178ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (387ms)
+		LoadAssemblies (179ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (379ms)
+			TypeCache.Refresh (377ms)
+				TypeCache.ScanAssembly (164ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (2677ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2613ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2424ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (111ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\game0319\game0319\TestGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\game0319\game0319\TestGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.497 seconds
+Refreshing native plugins compatible for Editor in 5.00 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.604 seconds
+Domain Reload Profiling: 2101ms
+	BeginReloadAssembly (231ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (67ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (1136ms)
+		LoadAssemblies (830ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (456ms)
+			TypeCache.Refresh (428ms)
+				TypeCache.ScanAssembly (402ms)
+			ScanForSourceGeneratedMonoScriptInfo (23ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (605ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (421ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (304ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 6.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3085 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.3 KB). Loaded Objects now: 3552.
+Memory consumption went from 122.1 MB to 122.1 MB.
+Total: 3.772800 ms (FindLiveObjects: 0.252300 ms CreateObjectMapping: 0.237100 ms MarkObjects: 3.183500 ms  DeleteObjects: 0.098600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 44c87b4951959fd976e6e39a6dfeaa39 -> 41a4157fe8860c4b3f5ca7fe36a1e0fc
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\game0319\game0319\TestGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\GitHub\game0319\game0319\TestGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.864 seconds
+Refreshing native plugins compatible for Editor in 4.78 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.101 seconds
+Domain Reload Profiling: 1964ms
+	BeginReloadAssembly (241ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (539ms)
+		LoadAssemblies (396ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (299ms)
+			TypeCache.Refresh (295ms)
+				TypeCache.ScanAssembly (284ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1102ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (381ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (272ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 4.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3077 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3555.
+Memory consumption went from 120.4 MB to 120.4 MB.
+Total: 4.519100 ms (FindLiveObjects: 0.247100 ms CreateObjectMapping: 0.216200 ms MarkObjects: 4.010300 ms  DeleteObjects: 0.044600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/HealthSystem.cs: 8c341e59c85d2b79e777429bd186eeeb -> febf08ca2ad5bf5896f65f1180c0ea8d
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PopupText.cs: b4f967b907b02067d034433fe1acbe09 -> fcbdfca1829b5aab2ad75863d623ef7e
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Demo.cs: 2d2d42130270d03d580dee5a2d6908aa -> 0b7a92f05528653df5e52544de74f590
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 278391.260559 seconds.
+  path: Assets/Script
+  artifactKey: Guid(5f8a2752c498b394e95a3f012a510260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script using Guid(5f8a2752c498b394e95a3f012a510260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddbfacf9d933d16a74600104a64b967a') in 0.002664 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 60.012971 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E3.png
+  artifactKey: Guid(8649198b9f25f9141900fc07141a5bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E3.png using Guid(8649198b9f25f9141900fc07141a5bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce369280d3025a488d53775db97ddbe8') in 0.068148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E5.png
+  artifactKey: Guid(b2620efdbd099b34ea9b7183e6b70e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E5.png using Guid(b2620efdbd099b34ea9b7183e6b70e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3218d9c426e0fc7dd4667cc127ba04') in 0.014108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.727834 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E8.png
+  artifactKey: Guid(ab45c46c8873ad145aaaadc7374904a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E8.png using Guid(ab45c46c8873ad145aaaadc7374904a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02447b3d906761e3ad7e61784fd68537') in 0.016086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E10.png
+  artifactKey: Guid(975168753f7fffb408ea63f0c83dad0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E10.png using Guid(975168753f7fffb408ea63f0c83dad0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62fa1b55514483f47295fb17a9ba6cfd') in 0.019668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.041401 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E12.png
+  artifactKey: Guid(312fe06a9b22da74581dd9d688e665cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E12.png using Guid(312fe06a9b22da74581dd9d688e665cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b304da784d7643b1ef61fc669c82401e') in 0.012896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.022690 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E14.png
+  artifactKey: Guid(4bb9f94ffdfc0a04f9b440004ad6e1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E14.png using Guid(4bb9f94ffdfc0a04f9b440004ad6e1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6db40198b90fd801e15bd83d297a3c79') in 0.016500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.048731 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E17.png
+  artifactKey: Guid(64f3be01e52caf54d85e38e502dbfecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E17.png using Guid(64f3be01e52caf54d85e38e502dbfecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd0ac4cb897d418eba20a49f210c2d9') in 0.034211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E19.png
+  artifactKey: Guid(798d4c678cd0132478e048d1becadcf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E19.png using Guid(798d4c678cd0132478e048d1becadcf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7554e81bc61ac1fe2128d382c20792a') in 0.029756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.071176 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E22.png
+  artifactKey: Guid(402811a66b3b2aa4a9c07f15f57f2531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E22.png using Guid(402811a66b3b2aa4a9c07f15f57f2531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9dfd6102e111266bc73daa20024905') in 0.038587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E23.png
+  artifactKey: Guid(317a1e62b1cb0b64fa128e320f8fbbb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E23.png using Guid(317a1e62b1cb0b64fa128e320f8fbbb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724e1e6454cc3ad0c8fcd21f46bd3c2b') in 0.138016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.357463 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E29.png
+  artifactKey: Guid(2b37e2f00601c6c428526077649b5910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E29.png using Guid(2b37e2f00601c6c428526077649b5910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c354b9072b45936d6f1ab1720af9e0d1') in 0.044497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.058369 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E31.png
+  artifactKey: Guid(a705bf10f5ac61b45bada5722a39c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E31.png using Guid(a705bf10f5ac61b45bada5722a39c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '555dfe21ab3608bb93ed68618b9d2050') in 0.017457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.076509 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E34.png
+  artifactKey: Guid(4644146b22feb464888f918b25bb26be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E34.png using Guid(4644146b22feb464888f918b25bb26be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3c5655282cf2451ff0b5f27b9d460a5') in 0.050156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E36.png
+  artifactKey: Guid(3347b6027d769f548b8711a24ec2d0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E36.png using Guid(3347b6027d769f548b8711a24ec2d0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8284a5dc8a527dd32468f5f96443de') in 0.191132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E40.png
+  artifactKey: Guid(4ddee306118fcc64e8bd94f48643d0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E40.png using Guid(4ddee306118fcc64e8bd94f48643d0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db2641d584acd31918885f7f28cb075') in 0.013728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E37.png
+  artifactKey: Guid(266ec72c98bc56541a82c36cf1949a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Arlan Trindade/Free emojis pixel art/emojis-x1-32x32/E37.png using Guid(266ec72c98bc56541a82c36cf1949a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a3348fc514a75001bfc8f30efbeb1e0') in 0.036609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
