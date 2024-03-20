@@ -359,6 +359,7 @@
 "Assets/Asset/ZombiSoft/TinyHealthSystem/Demo/PopupText.cs"
 "Assets/Asset/ZombiSoft/TinyHealthSystem/HealthSystem.cs"
 "Assets/Script/Bullet.cs"
+"Assets/Script/ChooseCharacter.cs"
 "Assets/Script/EmemyMove.cs"
 "Assets/Script/EnemySpawn.cs"
 "Assets/Script/PlayerCtrl.cs"

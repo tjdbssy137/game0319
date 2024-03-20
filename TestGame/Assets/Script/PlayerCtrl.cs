@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerCtrl : MonoBehaviour
 {
+
     public Sprite[] playerFace;
+    public Sprite[] startPlayerFace;
+    public GameObject[] bulletPrefab;
     private int attackCount = 0;
+    private int StartCharacter = ChooseCharacter.Instance.CharInfo;
 
     //bullet
-    public GameObject bulletPrefab;
     private float bulletCount = 3;
-    public float moveSpeed = 30f;
+    public float moveSpeed = 3f;
     private Rigidbody rb;
     private Vector3 position = Vector3.zero;
 
@@ -27,14 +31,16 @@ public class PlayerCtrl : MonoBehaviour
     public GameObject gameover;
     public Text textUI;
     int time = 3;
+    bool isRestart = false;
+    float timeReset2 = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        playerFace[attackCount] = startPlayerFace[StartCharacter];
         this.GetComponentInChildren<SpriteRenderer>().sprite = playerFace[attackCount];
         rb = GetComponent<Rigidbody>();
         Fire();
-        gameover.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,6 +52,11 @@ public class PlayerCtrl : MonoBehaviour
         {
             Fire();
             timeReset = 0;
+        }
+
+        if(isRestart)
+        {
+            Restart();
         }
     }
 
@@ -61,32 +72,35 @@ public class PlayerCtrl : MonoBehaviour
 
     void Fire()
     {
-        
         for (int i = 0; i < bulletCount; i++)
         {
             Vector3 bulletDir = Vector3.forward;
             bulletDir.z -= 30f;
             bulletDir.z += 30f * i;
             Quaternion quaternion = Quaternion.Euler(0, bulletDir.z, 0);
-            Instantiate(bulletPrefab, transform.position, quaternion);
+            Instantiate(bulletPrefab[StartCharacter], transform.position, quaternion);
         }
     }
-
-    void showString()
+    void Restart()
     {
-        while (1 < time)
+        timeReset2 += Time.deltaTime;
+        if (1 < timeReset2)
         {
-            StartCoroutine(Timer());
+            textUI.text = "Restart.. " + time--.ToString() + "...";
+            timeReset2 = 0;
         }
-        SceneManager.LoadScene(0);
+        if (time < 0)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
-
     private void OnTriggerEnter(Collider other)
     {
        
         if (other.gameObject.CompareTag("enemyBullet"))
         {
             StartCoroutine(DamagePlayer());
+            Destroy(other.gameObject);
             this.GetComponentInChildren<SpriteRenderer>().sprite = playerFace[++attackCount]; 
         }
         else if (other.gameObject.CompareTag("Item1"))
@@ -97,12 +111,34 @@ public class PlayerCtrl : MonoBehaviour
         else if (other.gameObject.CompareTag("Item2"))
         {
             Destroy(other.gameObject);
-            bulletTime -= 0.2f;
+            bulletTime -= 0.1f;
         }
         else if (other.gameObject.CompareTag("Item3"))
         {
             Destroy(other.gameObject);
-            HP += 34f;
+            if(HP + 10f < 100)
+            {
+                HP += 10;
+            }
+            else
+            {
+                HP = 100;
+            }
+
+            playerHP.fillAmount = HP / 100;
+
+            if (90 <= HP)
+            {
+                this.GetComponentInChildren<SpriteRenderer>().sprite = playerFace[1];
+            }
+            else if(50 <= HP && HP < 80)
+            {
+                this.GetComponentInChildren<SpriteRenderer>().sprite = playerFace[1];
+            }
+            else if(HP < 50)
+            {
+                this.GetComponentInChildren<SpriteRenderer>().sprite = playerFace[2];
+            }
         }
     }
 
@@ -116,8 +152,8 @@ public class PlayerCtrl : MonoBehaviour
             if (HP <= 0)
             {
                 gameover.SetActive(true);
-                showString();
-                Time.timeScale = 0;
+                isRestart = true;
+                break;
             }
 
             playerHP.fillAmount = HP / 100;
@@ -125,9 +161,4 @@ public class PlayerCtrl : MonoBehaviour
         }
     }
 
-    IEnumerator Timer()
-    { 
-        yield return new WaitForSeconds(1f);
-        time--;
-    }
 }

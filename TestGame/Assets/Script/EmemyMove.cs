@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class EmemyMove : MonoBehaviour
 {
     private GameObject Player;
-    private float speed = 0.8f;
+    private float speed = 0.6f;
 
     public GameObject[] dropItem;
     //bullet
@@ -49,17 +49,18 @@ public class EmemyMove : MonoBehaviour
         if(other.gameObject.CompareTag("bullet"))
         {
             //랜덤 확률로 아이템 생성
-            int random = Random.Range(0, 6);
+            
+            int random = Random.Range(0, 9);
             switch(random)
             { 
+                case 1:
+                    Instantiate(dropItem[0], transform.position, transform.rotation);//죽은 자리에서 안움직이게..
+                    break;
+                case 2:
+                    Instantiate(dropItem[1], transform.position, transform.rotation);
+                    break;
                 case 3:
-                    Instantiate(dropItem[0], this.transform.position, this.transform.rotation);//죽은 자리에서 안움직이게..
-                    break;
-                case 4:
-                    Instantiate(dropItem[1], this.transform.position, this.transform.rotation);
-                    break;
-                case 5:
-                    Instantiate(dropItem[2], this.transform.position, this.transform.rotation);
+                    Instantiate(dropItem[2], transform.position, transform.rotation);
                     break;
                 default:
                     break;
