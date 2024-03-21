@@ -362,7 +362,10 @@
 "Assets/Script/ChooseCharacter.cs"
 "Assets/Script/EmemyMove.cs"
 "Assets/Script/EnemySpawn.cs"
+"Assets/Script/GameManager.cs"
 "Assets/Script/PlayerCtrl.cs"
+"Assets/Script/UIManager.cs"
+"Assets/Script/Util.cs"
 -langversion:9.0
 
 /deterministic
