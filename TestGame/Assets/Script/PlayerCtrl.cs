@@ -5,9 +5,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
+//Odin 
+[System.Serializable]
+public struct PlayerData
+{
+    public Sprite PlayerFace;
+    public Sprite StartPlayerFace;
+    public GameObject BulletPrefab;
+}
+
 public class PlayerCtrl : MonoBehaviour
 {
 
+    //C++ ->  ¹è¿­  vector => List
+    //              map => Dictionary 
+    [SerializeField]
+    private List<PlayerData> playerFace11 = new();
     public Sprite[] playerFace;
     public Sprite[] startPlayerFace;
     public GameObject[] bulletPrefab;
